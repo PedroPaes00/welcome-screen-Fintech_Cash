@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{font-size: 62.5%;}
+body{font-size: 1.6rem;}
+
+h1{font-size: 3rem;
+margin: 2rem;
+text-align: center;}
+
+h2{font-size: 3rem;
+margin: 1rem;
+text-align: center;}
+
+.container{margin: 2rem auto;
+text-align: center;}
+.box{border: 1px solid #000;
+background-color: #c7c5c5;
+min-height: 5rem;}
+
+/* Para utilizar o Grid é sempre necessário inserir "display-grid" */
+.grid-container{
+    display: grid;
+}
+
+.ex-01{
+    grid-template-columns: 5rem 7rem 12rem 10rem;
+}
+.ex-02{
+    grid-template-columns: 20% 30% 30% 20%;
+}
+.ex-03{
+    grid-template-columns: 1fr 2fr 1fr 3fr;
+}
+
+.ex-04{
+   grid-template-columns: repeat(3, 1fr) 100px; /*  A função repeat permite declarar apenas um valor e determinar as colunas que ele será utilizado (núm. col.  e tamano) */
+}
+.ex-05{
+     grid-template-columns: repeat(4, minmax(100px, 200px)); /*Minmax determina o tamanho minimo e maximo que a coluna pode ter  */
+}
+.ex-06{
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr)); /*Ao utilizar o auto-fit não é necessário inserir o número de elementos na linha e ele ira esticar ao maximo o tamanho da linha tentando não quebrar, porem é necessário detetrminar seu tamanho maximo e minimo*/
+}
+.ex-07{
+     grid-template-columns:  repeat(auto-fill,minmax(100px,1fr)); /* O auto-fill tem a mesma funcionalidade do auto-fit, porem não ira ocupar todo espaço disponível */
+}
+.ex-08{
+      grid-template-rows: 20px 40px 60px 200px; }/* grid-template-rows utilizado para linhas  */

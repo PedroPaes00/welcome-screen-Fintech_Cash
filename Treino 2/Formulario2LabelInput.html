@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Formulario2LabelInput.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form id="dados" name="dados" method="post" action="">
+        <fieldset>
+            <legend>Campo text</legend>
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo senha</legend>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo e-mail</legend>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo url</legend>
+            <label for="url">Seu site</label>
+            <input type="url" id="url" name="url" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo busca</legend>
+            <label for="search">Pesquisa</label>
+            <input type="search" id="search" name="search" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo cor</legend>
+            <label for="cor">Selecione uma cor</label>
+            <input type="color" id="cor" name="cor" >
+        
+            <legend>Campo text</legend>
+            <label for="arquivo">Selecione um arquivo</label>
+            <input type="file" id="arquivo" name="arquivo" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo data</legend>
+            <label for="data">Campo Data</label>
+            <input type="date" id="data" name="data" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo hora</legend>
+            <label for="time">Campo Hora</label>
+            <input type="time" id="time" name="time" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo DateTimeLocal</legend>
+            <label for="datahora">Data/Hora</label>
+            <input type="datetime-local" id="datehora" name="datehora" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo Semana</legend>
+            <label for="week">Semana</label>
+            <input type="week" id="week" name="week" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo Mês</legend>
+            <label for="mes">Mês</label>
+            <input type="month" id="mes" name="mes" >
+        </fieldset>
+        <fieldset>
+            <legend>Campo Número</legend>
+            <label for="number">Campo númerico</label>
+            <input type="number" id="number" name="number" 
+            min="10" max="100" step="5">
+        </fieldset>
+        <fieldset>
+            <legend>Campo Range</legend>
+            <label for="escala">Campo range</label>
+            <input type="range" id="escala" name="escala"
+            min="100" max="1000" step="50">
+        </fieldset>
+        <fieldset>
+            <legend>Campo radio</legend>
+            <p>Tipo de conta</p>
+            <input type="radio" id="conta1" name="conta" value="free">
+            <label for="conta1">Free</label>
+            <input type="radio" id="conta2" name="conta" value="basic">
+            <label for="conta2">Basic</label>
+            <input type="radio" id="conta3" name="conta" value="plus">
+            <label for="conta3">Plus</label>
+            <input type="radio" id="conta4" name="conta" value="premium">
+            <label for="conta4">Premium</label>
+        </fieldset>
+        <fieldset>
+            <legend>Campo checkbox</legend>
+            <p>Preferências</p>
+            <input type="checkbox" id="preferencia1" name="front-end" value="1">
+            <label for="preferencia1">Front-end</label>
+            <input type="checkbox" id="preferencia2" name="back-end" value="2">
+            <label for="preferencia2">Back-end</label>
+            <input type="checkbox" id="preferencia3" name="banco-dados" value="3">
+            <label for="preferencia3">Banco de dados</label>
+        </fieldset>
+        <fieldset>
+            <legend>Select</legend>
+            <label for="atuacao">Área de atuação</label>
+            <select name="atuacao" id="atuacao">
+                <option value="0" disabled selected>Seleciona sua opçaõ</option>
+                <option value="1">Front-end</option>
+                <option value="2">Back-end</option>
+                <option value="3">Banco-dados</option>
+                <option value="4">Gestão de projetos</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>Datalist</legend>
+            <input list="linguagens" id="lista-linguagens">
+            <datalist id="linguagens">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="Java">
+                <option value="JavaScript">
+                <option value="TypeScript">
+            </datalist>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>Campo Textarea</legend>
+            <Label for="mensagem">Mensagem</Label><br>
+            <textarea name="mensagem" id="mensagem"></textarea>
+            </datalist>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>Botões - input </legend>
+            <input type="submit" name="" id="" value="Criar Conta">
+            <input type="reset" name="" id="" value="Limpra Dados">
+            <input type="button" name="" id="" value="Chamar JavaScript">
+            </datalist>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>Botões - button </legend>
+            <button type="submit">Criar conta</button>
+            <button type="reset">Limpar Dados</button>
+            <button type="button">Chamar JavaScript</button>
+            </datalist>
+                </select>
+        </fieldset>
+    </form>
+</body>
+</html>
